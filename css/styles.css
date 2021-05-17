@@ -16,3 +16,27 @@ button {
 .blue-eyes .eye-color {
 	fill: #175282;	
 }
+
+
+.sad .mouth {
+	transform: rotate(180deg) scale(.8);
+	transform-origin: 340px 390px;
+}
+
+@keyframes moveEyes {
+	20% {
+		transform: translate(-18px, -20px);
+	}
+	40% {
+		transform: translate(0, 0);
+	}
+	65% {
+		transform: translate(18px, -20px);
+	}
+}
+.inner-eye-group {
+	transition: all 1s linear;
+}
+.move-around .inner-eye-group {
+	animation: moveEyes 2s infinite;
+}
