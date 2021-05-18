@@ -1,0 +1,11 @@
+/* mobile first approach */
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat {
+    width: 100%;
+    height: auto;
+}
