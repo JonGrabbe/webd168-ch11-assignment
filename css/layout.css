@@ -5,7 +5,21 @@
     flex-direction: column;
 }
 
+.svg-container {
+    display: flex;
+    justify-content: center;
+}
 .cat {
     width: 100%;
-    height: auto;
+}
+
+
+
+@media(min-width: 750px) {
+    .svg-container {
+        /* justify-content: flex-start; */
+    }
+    .cat {
+        max-width: 500px;
+    }
 }
