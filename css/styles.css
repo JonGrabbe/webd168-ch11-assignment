@@ -1,94 +1,91 @@
 /* CSS Document */
 body {
-	width: 85%;
-	margin: 1em auto 0;
-	height: 100%;
-	font: 90%/1.5 Georgia, "Times New Roman", T, serif;
+  width: 85%;
+  margin: 1em auto 0;
+  height: 100%;
+  font: 90%/1.5 Georgia, "Times New Roman", T, serif;
 }
 h1 {
-	font-family: Verdana, Geneva, sans-serif;
-	font-size: 2.8em;
-	font-weight: bold;
-	color: #0D1F59;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 2.8em;
+  font-weight: bold;
+  color: #0d1f59;
 }
 button {
-    text-transform: uppercase;
-}
-.blue-eyes .eye-color {
-	fill: #175282;	
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
+.blue-eyes .eye-color {
+  fill: #175282;
+}
 
 .sad .mouth {
-	transform: rotate(180deg) scale(.8);
-	transform-origin: 340px 390px;
+  transform: rotate(180deg) scale(0.8);
+  transform-origin: 340px 390px;
 }
-
 
 @keyframes moveEyes {
-	20% {
-		transform: translate(-18px, -20px);
-	}
-	40% {
-		transform: translate(0, 0);
-	}
-	65% {
-		transform: translate(18px, -20px);
-	}
+  20% {
+    transform: translate(-18px, -20px);
+  }
+  40% {
+    transform: translate(0, 0);
+  }
+  65% {
+    transform: translate(18px, -20px);
+  }
 }
 .inner-eye-group {
-	transition: all 1s linear;
+  transition: all 1s linear;
 }
 .move-around .inner-eye-group {
-	animation: moveEyes 2s infinite;
+  animation: moveEyes 2s infinite;
 }
-
 
 @keyframes leftWhiskers {
-	20% {
-		transform: rotate(5deg);
-	}
-	60% {
-		transform: rotate(-5deg);
-	}
+  20% {
+    transform: rotate(5deg);
+  }
+  60% {
+    transform: rotate(-5deg);
+  }
 }
 .move-around .left-whiskers {
-	animation: leftWhiskers	3s infinite;
-	transform-origin: 325px 350px;
+  animation: leftWhiskers 3s infinite;
+  transform-origin: 325px 350px;
 }
-
 
 @keyframes rightWhiskers {
-	5% {
-		transform: rotate(-2deg);
-	}
-	90% {
-		transform: rotate(7deg);
-	}
+  5% {
+    transform: rotate(-2deg);
+  }
+  90% {
+    transform: rotate(7deg);
+  }
 }
 .move-around .right-whiskers {
-	animation: rightWhiskers 3s infinite;
-	transform-origin: 325px 350px;
+  animation: rightWhiskers 3s infinite;
+  transform-origin: 325px 350px;
 }
-
 
 @keyframes moveHead {
-	20% {
-		transform: rotateY(10deg) rotateX(10deg);
-	}
-	40% {
-		transform: rotateY(25deg) rotateX(10deg);
-	}
-	60% {
-		transform: rotateY(-10deg) rotateX(-10deg);
-	}
-	85% {
-		transform: rotateY(-10deg) rotateX(-16deg);
-	}
+  20% {
+    transform: rotateY(10deg) rotateX(10deg);
+  }
+  40% {
+    transform: rotateY(25deg) rotateX(10deg);
+  }
+  60% {
+    transform: rotateY(-10deg) rotateX(-10deg);
+  }
+  85% {
+    transform: rotateY(-10deg) rotateX(-16deg);
+  }
 }
 .move-around {
-	animation: moveHead 3s infinite;
+  animation: moveHead 3s infinite;
 }
 .svg-container {
-	perspective: 4000px;
+  perspective: 4000px;
 }
